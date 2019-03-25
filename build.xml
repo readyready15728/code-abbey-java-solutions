@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="Code Abbey Solutions" default="build">
+  <property name = "src" value = "."/>
+
+  <target name="build">
+    <javac destdir="${src}">
+      <src path = "${src}"/>
+    </javac>
+  </target>
+</project>

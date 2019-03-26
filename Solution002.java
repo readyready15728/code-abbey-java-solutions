@@ -1,7 +1,8 @@
+import java.io.*;
 import java.util.*;
 
 public class Solution002 {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     List<String> input = Common.getFileAsLines("test-data002.txt");
     int sum = 0;
 

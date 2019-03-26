@@ -1,5 +1,7 @@
+import java.io.*;
+
 public class Solution001 {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     String input = Common.getFileAsString("test-data001.txt");
     int sum = 0;
 

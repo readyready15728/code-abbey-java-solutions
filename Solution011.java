@@ -19,8 +19,8 @@ public class Solution011 {
 
       while (result > 0) {
         remainder = result % 10;
-        sum = sum + remainder;
-        result = result / 10;
+        sum += remainder;
+        result /= 10;
       }
 
       output.add(sum);

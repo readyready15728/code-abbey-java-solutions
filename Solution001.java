@@ -6,7 +6,7 @@ public class Solution001 {
     int sum = 0;
 
     for (String str : input.split(" ")) {
-      sum += Integer.parseInt(str.strip());
+      sum += Integer.parseInt(str);
     }
 
     System.out.println(sum);

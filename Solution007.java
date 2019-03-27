@@ -6,7 +6,7 @@ public class Solution007 {
     String[] textNumerals = input.split(" ");
 
     for (int i = 1; i < textNumerals.length; i++) {
-      System.out.print((int) Math.round((((float) Integer.parseInt(textNumerals[i].strip())) - 32) * 5.0 / 9.0));
+      System.out.print((int) Math.round((((float) Integer.parseInt(textNumerals[i])) - 32) * 5.0 / 9.0));
 
       if (i != textNumerals.length - 1) {
         System.out.print(' ');

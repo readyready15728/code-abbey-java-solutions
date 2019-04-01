@@ -3,7 +3,7 @@
   <property name = "src" value = "."/>
 
   <target name="build">
-    <javac destdir="${src}">
+    <javac destdir="${src}" debug="true">
       <src path = "${src}"/>
     </javac>
   </target>

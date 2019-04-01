@@ -30,32 +30,56 @@ doneHere:
             stack.push(currentCharacter);
             break;
           case ')':
-            if (stack.peek() != '(') {
-              break doneHere;
+            try {
+              if (stack.peek() != '(') {
+                break doneHere;
+              }
+
+              stack.pop();
+            } catch (NullPointerException e) {
+                expressionIsLegitimate = false;
+                break doneHere;
             }
 
-            stack.pop();
             break;
           case ']':
-            if (stack.peek() != '[') {
+            try {
+              if (stack.peek() != '[') {
+                break doneHere;
+              }
+
+              stack.pop();
+            } catch (NullPointerException e) {
+              expressionIsLegitimate = false;
               break doneHere;
             }
 
-            stack.pop();
             break;
           case '}':
-            if (stack.peek() != '{') {
+            try {
+              if (stack.peek() != '{') {
+                break doneHere;
+              }
+
+              stack.pop();
+            } catch (NullPointerException e) {
+              expressionIsLegitimate = false;
               break doneHere;
             }
 
-            stack.pop();
             break;
           case '>':
-            if (stack.peek() != '<') {
+            try {
+              if (stack.peek() != '<') {
+                break doneHere;
+              }
+
+              stack.pop();
+            } catch (NullPointerException e) {
+              expressionIsLegitimate = false;
               break doneHere;
             }
 
-            stack.pop();
             break;
         }
       }

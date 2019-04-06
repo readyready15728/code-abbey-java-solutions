@@ -4,7 +4,7 @@ import java.util.*;
 public class Solution027 {
   public static void main(String[] args) throws IOException {
     List<String> input = Common.getFileAsLines("test-data027.txt");
-    List<Integer> output = new ArrayList<Integer>();
+    List<Integer> output = new ArrayList<>();
     int n = Integer.parseInt(input.get(0));
     int[] a = new int[n];
     String[] textIntegers = input.get(1).split(" ");

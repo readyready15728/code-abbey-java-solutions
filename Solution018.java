@@ -4,7 +4,7 @@ import java.util.*;
 public class Solution018 {
   public static void main(String[] args) throws IOException {
     List<String> input = Common.getFileAsLines("test-data018.txt");
-    List<Float> output = new ArrayList<Float>();
+    List<Float> output = new ArrayList<>();
 
     input.remove(0);
     

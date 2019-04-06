@@ -5,8 +5,8 @@ import java.util.*;
 public class Solution023 {
   public static void main(String[] args) throws IOException {
     List<String> input = Common.getFileAsLines("test-data023.txt");
-    List<Integer> integers = new ArrayList<Integer>();
-    List<Integer> output = new ArrayList<Integer>();
+    List<Integer> integers = new ArrayList<>();
+    List<Integer> output = new ArrayList<>();
     int swaps = 0;
 
     for (String textInteger : input.get(0).split(" ")) {

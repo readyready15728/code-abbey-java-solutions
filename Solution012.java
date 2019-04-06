@@ -8,7 +8,7 @@ public class Solution012 {
 
   public static void main(String[] args) throws IOException {
     List<String> input = Common.getFileAsLines("test-data012.txt");
-    List<String> output = new ArrayList<String>();
+    List<String> output = new ArrayList<>();
 
     input.remove(0);
 

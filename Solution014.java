@@ -7,8 +7,8 @@ public class Solution014 {
 
     int initialValue = Integer.parseInt(input.get(0));
 
-    List<Character> operators = new ArrayList<Character>();
-    List<Integer> operands = new ArrayList<Integer>();
+    List<Character> operators = new ArrayList<>();
+    List<Integer> operands = new ArrayList<>();
 
     for (int i = 1; i < input.size() - 1; i++) {
       String[] operation = input.get(i).split(" ");

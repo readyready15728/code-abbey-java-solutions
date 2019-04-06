@@ -4,12 +4,12 @@ import java.util.*;
 public class Solution019 {
   public static void main(String[] args) throws IOException {
     List<String> input = Common.getFileAsLines("test-data019.txt");
-    List<Integer> output = new ArrayList<Integer>();
+    List<Integer> output = new ArrayList<>();
 
     input.remove(0);
     
     for (String expression : input) {
-      Deque<Character> stack = new ArrayDeque<Character>();
+      Deque<Character> stack = new ArrayDeque<>();
       boolean expressionIsLegitimate = true;
 
 doneHere:
